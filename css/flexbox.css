@@ -1,0 +1,44 @@
+section:nth-child(2n) {
+  background-color: aliceblue;
+}
+
+section:nth-child(2n+1) {
+  background-color: gray;
+}
+
+/* Flexbox */ 
+#datosgenerales {
+  display: flex; /* Modelo de diseño flexible */
+  gap: 0.5rem; /* Separación entre filas y columnas */
+  flex-direction: row; /* Dirección por filas */
+  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
+  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
+  align-items: stretch; /* Estirar elementos en el eje transversal */
+}
+
+#habilidadespersonales {
+  display: flex; /* Modelo de diseño flexible */
+  gap: 0.5rem; /* Separación entre filas y columnas */
+  flex-direction: row; /* Dirección por filas */
+  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
+  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
+  align-items: stretch; /* Estirar elementos en el eje transversal */
+}
+
+#conocimientos {
+  display: flex; /* Modelo de diseño flexible */
+  gap: 0.5rem; /* Separación entre filas y columnas */
+  flex-direction: row; /* Dirección por filas */
+  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
+  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
+  align-items: stretch; /* Estirar elementos en el eje transversal */
+}
+
+#trabajosanteriores {
+  display: flex; /* Modelo de diseño flexible */
+  gap: 0.5rem; /* Separación entre filas y columnas */
+  flex-direction: row; /* Dirección por filas */
+  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
+  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
+  align-items: stretch; /* Estirar elementos en el eje transversal */
+}
