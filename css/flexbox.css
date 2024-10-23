@@ -7,38 +7,36 @@ section:nth-child(2n+1) {
 }
 
 /* Flexbox */ 
+main {
+  display: flex;
+  gap: 0.5rem;                  /* Espacio entre los elementos en filas y columnas */
+  flex-direction: row;
+  flex-wrap: wrap;              /* Permite que los elementos se distribuyan en varias filas */
+  justify-content: space-between; /* Distribuir espacio equitativamente entre elementos */
+  }
+
+/* Estilo para las secciones */
+section {
+  border: 1px solid #ccc;        /* Bordes alrededor de cada sección */
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
 #datosgenerales {
-  display: flex; /* Modelo de diseño flexible */
-  gap: 0.5rem; /* Separación entre filas y columnas */
-  flex-direction: row; /* Dirección por filas */
-  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
-  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
-  align-items: stretch; /* Estirar elementos en el eje transversal */
+  flex-basis: 100%;             /* Ocupa todo el ancho disponible en la primera fila */
 }
 
-#habilidadespersonales {
-  display: flex; /* Modelo de diseño flexible */
-  gap: 0.5rem; /* Separación entre filas y columnas */
-  flex-direction: row; /* Dirección por filas */
-  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
-  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
-  align-items: stretch; /* Estirar elementos en el eje transversal */
+/* Habilidades Personales y Conocimientos, ocupan la mitad del ancho */
+#habilidadespersonales, #conocimientos {
+  flex-basis: calc(50% - 0.5rem);  /* Cada uno ocupa el 50% menos el espacio del gap */
 }
 
-#conocimientos {
-  display: flex; /* Modelo de diseño flexible */
-  gap: 0.5rem; /* Separación entre filas y columnas */
-  flex-direction: row; /* Dirección por filas */
-  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
-  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
-  align-items: stretch; /* Estirar elementos en el eje transversal */
+/* Trabajos anteriores, Habilidades en Programación y Proyectos anteriores, ocupan 1/3 del ancho */
+#trabajosanteriores, #habilidadesprogramacion, #proyectosanteriores {
+  flex-basis: calc(33.33% - 0.5rem);  /* Cada uno ocupa 1/3 del ancho menos el espacio del gap */
 }
 
-#trabajosanteriores {
-  display: flex; /* Modelo de diseño flexible */
-  gap: 0.5rem; /* Separación entre filas y columnas */
-  flex-direction: row; /* Dirección por filas */
-  flex-wrap: wrap; /* Ajustar elementos hasta ocupar la capacidad máxima */
-  justify-content: space-between; /* Distribuir espacio en medio de los items en el eje principal */
-  align-items: stretch; /* Estirar elementos en el eje transversal */
+/* Idiomas y Medios de contacto ocupan la mitad del ancho */
+#idiomas, #medioscontacto {
+  flex-basis: calc(50% - 0.5rem);  /* Cada uno ocupa el 50% menos el espacio del gap */
 }

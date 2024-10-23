@@ -8,4 +8,53 @@ main section:nth-child(2n+1) {
 
 /* Grid: AREAS */
 
+main {
+  display: grid;                   /* Modelo de diseño en cuadrícula */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  /* Tres columnas de igual tamaño */
+  grid-template-areas:  
+  "datosgenerales datosgenerales datosgenerales datosgenerales datosgenerales datosgenerales"
+  "habilidadespersonales habilidadespersonales habilidadespersonales conocimientos conocimientos conocimientos"
+  "trabajosanteriores trabajosanteriores habilidadesprogramacion habilidadesprogramacion proyectosanteriores proyectosanteriores"
+  "idiomas idiomas idiomas medioscontacto medioscontacto medioscontacto";  
+  gap: 0.5rem;                      /* Separación entre filas y columnas */
+  box-sizing: border-box;
+}
 
+/* Secciones individuales por áreas */
+#datosgenerales {
+  grid-area: datosgenerales;      
+}
+
+#habilidadespersonales {
+  grid-area: habilidadespersonales; 
+}
+
+#conocimientos {
+  grid-area: conocimientos;      
+}
+
+#trabajosanteriores {
+  grid-area: trabajosanteriores; 
+}
+
+#habilidadesprogramacion {
+  grid-area: habilidadesprogramacion; 
+}
+
+#proyectosanteriores {
+  grid-area: proyectosanteriores; 
+}
+
+#idiomas {
+  grid-area: idiomas;             
+}
+
+#medioscontacto {
+  grid-area: medioscontacto;       
+}
+
+/* Estilos generales para las secciones */
+section {
+  border: 1px solid #ccc;
+  padding: 1rem;
+}
